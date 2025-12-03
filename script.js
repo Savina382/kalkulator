@@ -17,13 +17,13 @@ buttons.forEach((btn) => {
     const lastChar = val.slice(-1);
     const beforeLast = val.slice(-2, -1);
     const operators = "+-*/";
-    // Ako nije broj, ubaci direktno (operatori ili specijalna dugmad)
+    // Ako nije broj, ubaci direktno
     if (isNaN(char)) {
       display.value += char;
       localStorage.setItem("lastCalc", display.value);
       return;
     }
-    // BLOKIRANJE 05, 089, 003 itd.
+    // BLOKIRANJE 05, 089
     if (
       operators.includes(beforeLast) && // pre poslednje je operator
       lastChar === "0" && // poslednji znak je 0
