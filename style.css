@@ -1,0 +1,27 @@
+.calculator-wrapper {
+  width: 300px;
+  margin: 0 auto; /*sirina je zakljucana*/
+  border-radius: 12px;
+  padding: 20px;
+  background: #d2caf6;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.btn {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 15px;
+  font-size: 20px;
+  transition: 0.1s;
+}
+.btn:active {
+  background-color: #ccc; /* potamni dugme na klik */
+  transform: scale(0.95); /* blago smanjenje – simulira pritisak */
+}
+#display {
+  margin: 10px;
+}
