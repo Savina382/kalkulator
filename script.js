@@ -95,5 +95,3 @@ function deleteOneChar() {
   localStorage.setItem("lastCalc", display.value);
 }
 document.getElementById("deleteOne").addEventListener("click", deleteOneChar);
-
-// ako je displej tačno "0" i korisnik pritisne broj, prvo obrišeš tu nulu
